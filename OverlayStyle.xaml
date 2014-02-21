@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="OverlayBackgroundColor" Color="Black"/>
+    <SolidColorBrush x:Key="OverlayForegroundColor" Color="White"/>
+    <FontFamily x:Key="OverlayFontFamily">./resources/#Volter (Goldfish)</FontFamily>
+
+    <Style x:Key="TitleStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Background" Value="{StaticResource OverlayBackgroundColor}"/>
+        <Setter Property="Foreground" Value="{StaticResource OverlayForegroundColor}"/>
+        <Setter Property="FontFamily" Value="{StaticResource OverlayFontFamily}"/>
+        <Setter Property="FontSize" Value="30px"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="ActionLogStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="Background" Value="{StaticResource OverlayBackgroundColor}"/>
+        <Setter Property="Foreground" Value="{StaticResource OverlayForegroundColor}"/>
+        <Setter Property="FontFamily" Value="{StaticResource OverlayFontFamily}"/>
+        <Setter Property="FontSize" Value="20px"/>
+    </Style>
+</ResourceDictionary>

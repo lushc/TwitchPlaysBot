@@ -1,0 +1,11 @@
+﻿<Window x:Name="Overlay" x:Class="TwitchPlaysBot.OverlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TwitchPlaysBot - Overlay" Width="300" Background="{DynamicResource OverlayBackgroundColor}">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <TextBlock Style="{DynamicResource TitleStyle}" x:Name="GameTitleBlock" DockPanel.Dock="Top" Padding="5"/>
+            <TextBox Style="{DynamicResource ActionLogStyle}" x:Name="ActionLog" IsReadOnly="True" DockPanel.Dock="Bottom" BorderThickness="0" Padding="5"/>
+        </DockPanel>
+    </Grid>
+</Window>
