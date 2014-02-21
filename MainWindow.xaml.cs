@@ -40,6 +40,13 @@ namespace TwitchPlaysBot
             InitJoypads();
             InitializeComponent();
             InitIRC();
+            LoadSettings();
+        }
+
+        private void LoadSettings()
+        {
+            Username.Text = Properties.Settings.Default.Username;
+            Channel.Text = Properties.Settings.Default.Channel;
         }
 
         private void InitJoypads()
@@ -171,7 +178,7 @@ namespace TwitchPlaysBot
                 // clear the console
                 ConsoleOutput.Text = "";
 
-                // save the configured settings
+                // save IRC configuration
                 Properties.Settings.Default.Username = Username.Text;
                 Properties.Settings.Default.Password = OAuthToken.SecurePassword;
                 Properties.Settings.Default.Channel = (Channel.Text.StartsWith("#") ? Channel.Text : "#" + Channel.Text);
